@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 6</title>
+</head>
+<body>
+   <h1> Registro de viajes </h1> 
+
+        <p>Nombre :</p><br>
+        <input type="text" id="nombre" placeholder="Ej: Albertina Alonso"><br>
+        <p id="fb-nombre"></p>
+        
+        <p>Edad:</p><br>
+        <input type="number" id="edad" placeholder="Ej: 14"><br>
+        <p id="fb-edad"></p>
+        
+        <p>Presupuesto:</p><br>
+        <input type="number" id="presupuesto" placeholder="Ej: 1400000"><br>
+        <p id="fb-presupuesto"></p>
+        
+        <p>Acepta seguro de viaje:</p><br>
+        <select id="seguro">
+        <option value="si">Si</option>
+        <option value="no">No</option>
+        </select><br>
+        <p id="fb-seguro"></p>
+        
+        <p>Destino preferido:</p><br>
+        <select id="destinoPreferido">
+        <option value="bariloche">Bariloche</option>
+        <option value="mendoza">Mendoza</option>
+        <option value="cataratas">Cataratas</option>
+        <option value="noPreferencia">No tengo preferencia</option>
+        </select><br>
+        <p id="fb-destino"></p>
+        
+        <p>Temporada:</p><br>
+        <select id="temporada">
+        <option value="enero">Enero</option>
+        <option value="febrero">Febrero</option>
+        <option value="ambos">Ambos meses</option>
+        </select><br>
+        <p id="fb-temporada"></p>
+        
+        <br>
+        <button onclick="registrarViaje()" >Registrar viaje</button>
+        
+        <div id="resultado"></div>
+
+   <script src="script.js"></script>
+</body>
+</html>
